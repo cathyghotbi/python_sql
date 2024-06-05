@@ -9,20 +9,19 @@ https://www.youtube.com/watch?v=x5MhydijWmc
 * Beginner's Guide: Installing Python 3 on Ubuntu | Step-by-Step Tutorial
 https://www.youtube.com/watch?v=IqETj6wHkfs
 
-ubuntu terminal (cathy@test: ~$):
-python3 --version
-sudo apt update
-suod apt install python3
-pip3 --version
-sudo apt install python3-pip
+# ubuntu terminal (cathy@test: ~$):
+* python3 --version
+* sudo apt update
+* suod apt install python3
+* pip3 --version
+* sudo apt install python3-pip
 
-* IDE 
-How to install PyCharm on Ubuntu 20.04 LTS / Ubuntu 22.4 LTS (Linux)
-https://www.youtube.com/watch?v=15daSz2QExo
-
+# IDE 
+* How to install PyCharm on Ubuntu 20.04 LTS / Ubuntu 22.4 LTS (Linux)
+* https://www.youtube.com/watch?v=15daSz2QExo
 * download pycharm from https://www.jetbrains.com/
-snap find pycharm
-sudo snap install pycharm-community --classic
+* snap find pycharm
+* sudo snap install pycharm-community --classic
 
 * start pyharm, add new project, new py file and just start your code there
 
@@ -33,8 +32,8 @@ https://dev.mysql.com/doc/
 * install mysql ubuntu
 https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
 
-sudo apt update
-sudo apt install mysql-server
+* sudo apt update
+* sudo apt install mysql-server
 
 // ensure server is running
 sudo systemctl start mysql.service
@@ -55,11 +54,11 @@ import mysql.connector > it will install needed thing :)
 
 with root user database is not accesible from mysql code in python, so a user is added and privileges granted
 cathy@test: ~$ sudo mysql
-mysql> creare user 'cathy'@'localhost' identified with mysql_native_password by 'password';
-mysql> alter user 'cathy'@'localhost' identified with mysql_native_password by 'password';
-mysql > grant all privileges on *.* to 'cathy'@'localhost' with grant option;
-mysql > flush privileges; 
-mysql > exit
+* mysql> creare user 'cathy'@'localhost' identified with mysql_native_password by 'password';
+* mysql> alter user 'cathy'@'localhost' identified with mysql_native_password by 'password';
+* mysql > grant all privileges on *.* to 'cathy'@'localhost' with grant option;
+* mysql > flush privileges; 
+* mysql > exit
 
 
 for copy-pasting between ubuntu and windows:
