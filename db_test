@@ -1,0 +1,33 @@
+
+import mysql.connector
+
+my_db = mysql.connector.connect(
+    host="localhost",
+    user="cathy",
+    password="password"
+)
+
+print(my_db)
+
+query = my_db.cursor()
+query.execute("create database if not exists test_database")
+
+"""
+to see the result of the query from terminal:
+cathy@test:~$ sudo mysql
+mysql> show databases;
+"""
+
+query.execute("show databases")
+print("------------------- databases -----------------------")
+for each_database in query:
+    print(each_database)
+
+
+query.execute("create table if not exists test_database.students (name VARCHAR(255), age INT)")
+
+query.execute("use test_database")
+query.execute("show tables")
+print("------------------- tables -----------------------")
+for each_table in query:
+    print(each_table)
